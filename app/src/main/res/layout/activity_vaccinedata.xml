@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vaccinedata">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Select Date"
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014">>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_baseline_date_range_24"
+            android:editable="false"
+            android:fontFamily="@font/poppinsmedium"
+            android:gravity="center_horizontal"
+
+            android:textSize="18sp"
+            tools:targetApi="jelly_bean" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutcovaxin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Covaxin"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:boxBackgroundColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246"
+        tools:layout_editor_absoluteX="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/covaxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="number"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="176dp"
+            tools:targetApi="jelly_bean" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutcovishield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="CoviShield"
+        android:layout_marginTop="30dp"
+
+        app:boxBackgroundColor="@color/white"
+
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutcovaxin"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="267dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/covishield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="number"
+            android:textSize="12sp"
+            tools:targetApi="jelly_bean" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutsputnikv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sputnik V"
+        android:inputType="textPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:boxBackgroundColor="@color/white"
+        android:layout_marginTop="30dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutcovishield"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="267dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sputnikv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="number"
+            android:textSize="12sp"
+            tools:targetApi="jelly_bean" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/uploaddatabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Data"
+        style="@style/Widget.AppCompat.Button.Colored"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutsputnikv"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
